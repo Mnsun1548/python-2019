@@ -42,7 +42,6 @@ print(DataList)
 #
 # Here's some example output:
 #
-# HW #10: Ken Pottebaum Solution
 # ['Fm::', 'Gbk::', 'Jxv::', 'Qku::', 'Viv::', 'Yi::']
 # ['r-Fm', 'v-Gbk', 's-Jxv', 'n-Qku', 'w-Viv', 'b-Yi']
 #
