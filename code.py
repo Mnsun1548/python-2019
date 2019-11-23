@@ -1,4 +1,3 @@
-print ("Hw #10 Matthew Volner") #Hw #10 Matthew Volner
 import random
 random.seed()
 #Build a list of random names in KeyList.
@@ -48,9 +47,3 @@ print(DataList)
 # ['r-Fm', 'v-Gbk', 's-Jxv', 'n-Qku', 'w-Viv', 'b-Yi']
 #
 #**********************************************************************
-                
-            
-            
-    
-
-    
