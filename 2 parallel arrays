@@ -9,3 +9,54 @@ for j in range(random.randint(5,8)):
         Name = Name + chr(random.randint(97,122))
     KeyList.append(Name+"::")
     DataList.append(chr(random.randint(97,122))+"-"+Name)
+
+import sys 
+for i in range(len(KeyList)): 
+    min_idx = i 
+    for j in range(i+1, len(KeyList)): 
+        if KeyList[min_idx] > KeyList[j]: 
+            min_idx = j      
+    KeyList[i], KeyList[min_idx] = KeyList[min_idx], KeyList[i]  
+for i in range(len(DataList)): 
+    min_idx = i 
+    for j in range(i+1, len(DataList)): 
+        if DataList[min_idx] > DataList[j]: 
+            min_idx = j      
+    DataList[i], DataList[min_idx] = DataList[min_idx],DataList[i]
+    
+print(KeyList)
+print(DataList)
+
+#**********************************************************************
+# The preceding code generates 2 parallel arrays:  KeyList and DataList.
+# Your assignment is to sort them based on the values in KeyList.
+#
+# Below these comments write code to do the following:
+#
+# 1) Define a Selection sort function to sort 2 parallel arrays that will
+#    be passed to them by reference. The sort routine should keep the items
+#    in both arrays in sync.  Your sort function should not print out anything--
+#    however, you can have it printing information while you are debugging your
+#    program.
+# 2) Add code to pass the arrays KeyList and DataList to your sort function.
+#    After returning from your sort function, print out the KeyList and
+#    DataList on 2 lines.  You can do this using the following code:
+#    print(KeyList)
+#    print(DataList)
+#
+# ** Special Instructions: You have 2 choices for doing the swaps. **
+#    Method #1: 
+#    Use the Data[k] = tmp type of notation that we have been using for
+#    our sort operations.
+#    Method #2: (Probably the harder method)
+#    Use the lst.insert() and lst.pop() functions when swapping values.
+#    See the online help or your Python reference sheet for help with these
+#    functions.
+#
+# Here's some example output:
+#
+# HW #10: Ken Pottebaum Solution
+# ['Fm::', 'Gbk::', 'Jxv::', 'Qku::', 'Viv::', 'Yi::']
+# ['r-Fm', 'v-Gbk', 's-Jxv', 'n-Qku', 'w-Viv', 'b-Yi']
+#
+#**********************************************************************
